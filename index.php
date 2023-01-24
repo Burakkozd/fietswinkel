@@ -7,12 +7,24 @@
     <title>php fietswinkel</title>
 </head>
 <body>
+
 <?php
-include('fiets.php');
-$fiets = new Fiets ("2", "gazelle", "zwart");
-$merk = $fiets->getMerk();
-echo $merk;
+include ("brommer.php");
+$brommer = new Brommer("zip type 4","4takt 50cc","mat zwart","getinte windscherm");
+echo '<h2>'.$brommer->getModel().$brommer->getUitvoering().'</h2>';
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
